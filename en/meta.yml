@@ -1,14 +1,35 @@
-title: Project title in sentence case
+title: Lunar horoscope
 hero_image: images/banner.png
-description: A short description of the project
+description: Spin two Scratch wheels to explore zodiac animals and elements.
 listed: false
 pdf: false
 steps:
-  - title: What you will make
-  - title: Step title
+  - title: 'What you will make'
+  - title: 'Set up your project'
     completion:
-      - engaged      
-  - title: Challenge
+      - 'engaged'
+  - title: 'Position the element wheel and pointers'
+  - title: 'Prepare a new turn'
+  - title: 'Ask for a year'
+  - title: 'Check the answer'
+  - title: 'Find a place in the cycle'
+  - title: 'Find the animal'
+  - title: 'Find the element'
+  - title: 'Choose the animal costume'
+  - title: 'Build the result text'
+  - title: 'Spin the animal wheel'
+  - title: 'Spin the element wheel'
+  - title: 'Vary the spins'
+  - title: 'Collect the animal traits'
+  - title: 'Add the element traits'
+    completion:
+      - 'internal'
+  - title: 'Reveal the result'
+  - title: 'Fade the animal into view'
+  - title: 'Try another year'
+  - title: 'Test and save your project'
+    completion:
+      - 'external'
+  - title: 'Keep your traits'
+  - title: 'Challenge'
     challenge: true
-    completion:
-      - external

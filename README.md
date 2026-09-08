@@ -1,18 +1,13 @@
-# default-project-template
+# Lunar horoscope
 
-![default-project-template](banner.png)
+A Scratch project for learners aged **11–14**, with an introduction and 21 manageable lessons, each ending with an observable test.
 
-Find the project online at [projects.raspberrypi.org/en/projects/default-project-template](https://projects.raspberrypi.org/en/projects/default-project-template)
+Start with [What you will make](en/step_1.md), then [Set up your project](en/step_2.md).
 
-## Resources
-For project materials and solutions, see [en/resources](https://github.com/raspberrypilearning/default-project-template/tree/master/en/resources) and [en/solutions](https://github.com/raspberrypilearning/default-project-template/tree/master/en/solutions).
+- [Starter project](en/code/lunar-horoscope-starter/lunar-horoscope-starter.sb3): all supplied lists and artwork, **no scripts and no variables**.
+- [Completed project](en/code/lunar-horoscope-complete/lunar-horoscope-complete.sb3): the supplied target, preserved byte for byte.
+- [Authoring and QA notes](en/README.md): workflow adaptations, variable progression, checks, and screenshot status.
 
-## Contributing
-See [CONTRIBUTING.md](CONTRIBUTING.md)
+The lessons use Scratch block diagrams and incremental additions in the same task-callout layout as `dino-jump`. Learners build every script, create all eight variables when needed, and test the calculations before connecting the final reveal.
 
-## Licence
-See [LICENCE.md](LICENCE.md)
-
-## Setting up a Crowdin project
-
-See [CROWDIN.md](CROWDIN.md).
+See [LICENCE.md](LICENCE.md) for licensing and [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidance.

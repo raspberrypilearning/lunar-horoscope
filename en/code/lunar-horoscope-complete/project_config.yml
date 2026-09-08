@@ -1,0 +1,4 @@
+name: "Lunar horoscope"
+identifier: "lunar-horoscope-complete"
+type: 'scratch'
+build: true

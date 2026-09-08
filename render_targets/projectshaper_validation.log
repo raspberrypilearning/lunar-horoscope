@@ -1,0 +1,50 @@
+Errors:
+- /Volumes/Extreme SSD/VSCode/lunar-horoscope/en/landing.md must end with the canonical iframe or the exact placeholder line
+- /Volumes/Extreme SSD/VSCode/lunar-horoscope/en/step_1.md must not contain more code blocks than learner-action headings
+- /Volumes/Extreme SSD/VSCode/lunar-horoscope/en/step_2.md must not contain more code blocks than learner-action headings
+- /Volumes/Extreme SSD/VSCode/lunar-horoscope/en/step_3.md must not contain more code blocks than learner-action headings
+- /Volumes/Extreme SSD/VSCode/lunar-horoscope/en/step_4.md must not contain more code blocks than learner-action headings
+- /Volumes/Extreme SSD/VSCode/lunar-horoscope/en/step_5.md must not contain more code blocks than learner-action headings
+- /Volumes/Extreme SSD/VSCode/lunar-horoscope/en/step_6.md must not contain more code blocks than learner-action headings
+- /Volumes/Extreme SSD/VSCode/lunar-horoscope/en/step_7.md must not contain more code blocks than learner-action headings
+- /Volumes/Extreme SSD/VSCode/lunar-horoscope/en/step_8.md must not contain more code blocks than learner-action headings
+- /Volumes/Extreme SSD/VSCode/lunar-horoscope/en/step_9.md must not contain more code blocks than learner-action headings
+- /Volumes/Extreme SSD/VSCode/lunar-horoscope/en/step_10.md must not contain more code blocks than learner-action headings
+- /Volumes/Extreme SSD/VSCode/lunar-horoscope/en/step_10.md has a malformed screenshot block
+- /Volumes/Extreme SSD/VSCode/lunar-horoscope/en/step_11.md must not contain more code blocks than learner-action headings
+- /Volumes/Extreme SSD/VSCode/lunar-horoscope/en/step_11.md has a malformed screenshot block
+- /Volumes/Extreme SSD/VSCode/lunar-horoscope/en/step_12.md must not contain more code blocks than learner-action headings
+- /Volumes/Extreme SSD/VSCode/lunar-horoscope/en/step_13.md single-task steps without learner-action headings must contain one or two code blocks
+- /Volumes/Extreme SSD/VSCode/lunar-horoscope/en/step_14.md must not contain more code blocks than learner-action headings
+- /Volumes/Extreme SSD/VSCode/lunar-horoscope/en/step_14.md has a malformed screenshot block
+- /Volumes/Extreme SSD/VSCode/lunar-horoscope/en/step_15.md single-task steps without learner-action headings must contain one or two code blocks
+- /Volumes/Extreme SSD/VSCode/lunar-horoscope/en/step_16.md single-task steps without learner-action headings must contain one or two code blocks
+- /Volumes/Extreme SSD/VSCode/lunar-horoscope/en/step_17.md must not contain more code blocks than learner-action headings
+- /Volumes/Extreme SSD/VSCode/lunar-horoscope/en/step_18.md single-task steps without learner-action headings must contain one or two code blocks
+- /Volumes/Extreme SSD/VSCode/lunar-horoscope/en/step_19.md must not contain more code blocks than learner-action headings
+- /Volumes/Extreme SSD/VSCode/lunar-horoscope/en/step_20.md must not contain more code blocks than learner-action headings
+- /Volumes/Extreme SSD/VSCode/lunar-horoscope/en/step_21.md single-task steps without learner-action headings must contain one or two code blocks
+- /Volumes/Extreme SSD/VSCode/lunar-horoscope/en/code/lunar-horoscope-starter/project_config.yml must set type to 'html' or 'python'
+- /Volumes/Extreme SSD/VSCode/lunar-horoscope/en/code/lunar-horoscope-complete/project_config.yml must set type to 'html' or 'python'
+Warnings:
+- /Volumes/Extreme SSD/VSCode/lunar-horoscope/en/step_1.md has no screenshot for step 1: no render target supplied
+- /Volumes/Extreme SSD/VSCode/lunar-horoscope/en/step_2.md has no screenshot for step 2: no render target supplied
+- /Volumes/Extreme SSD/VSCode/lunar-horoscope/en/step_3.md has no screenshot for step 3: no render target supplied
+- /Volumes/Extreme SSD/VSCode/lunar-horoscope/en/step_4.md has no screenshot for step 4: no render target supplied
+- /Volumes/Extreme SSD/VSCode/lunar-horoscope/en/step_5.md has no screenshot for step 5: no render target supplied
+- /Volumes/Extreme SSD/VSCode/lunar-horoscope/en/step_6.md has no screenshot for step 6: no render target supplied
+- /Volumes/Extreme SSD/VSCode/lunar-horoscope/en/step_7.md has no screenshot for step 7: no render target supplied
+- /Volumes/Extreme SSD/VSCode/lunar-horoscope/en/step_8.md has no screenshot for step 8: no render target supplied
+- /Volumes/Extreme SSD/VSCode/lunar-horoscope/en/step_9.md has no screenshot for step 9: no render target supplied
+- /Volumes/Extreme SSD/VSCode/lunar-horoscope/en/step_10.md has no screenshot for step 10: no render target supplied
+- /Volumes/Extreme SSD/VSCode/lunar-horoscope/en/step_11.md has no screenshot for step 11: no render target supplied
+- /Volumes/Extreme SSD/VSCode/lunar-horoscope/en/step_12.md has no screenshot for step 12: no render target supplied
+- /Volumes/Extreme SSD/VSCode/lunar-horoscope/en/step_13.md has no screenshot for step 13: no render target supplied
+- /Volumes/Extreme SSD/VSCode/lunar-horoscope/en/step_14.md has no screenshot for step 14: no render target supplied
+- /Volumes/Extreme SSD/VSCode/lunar-horoscope/en/step_15.md has no screenshot for step 15: no render target supplied
+- /Volumes/Extreme SSD/VSCode/lunar-horoscope/en/step_16.md has no screenshot for step 16: no render target supplied
+- /Volumes/Extreme SSD/VSCode/lunar-horoscope/en/step_17.md has no screenshot for step 17: no render target supplied
+- /Volumes/Extreme SSD/VSCode/lunar-horoscope/en/step_18.md has no screenshot for step 18: no render target supplied
+- /Volumes/Extreme SSD/VSCode/lunar-horoscope/en/step_19.md has no screenshot for step 19: no render target supplied
+- /Volumes/Extreme SSD/VSCode/lunar-horoscope/en/step_20.md has no screenshot for step 20: no render target supplied
+- /Volumes/Extreme SSD/VSCode/lunar-horoscope/en/step_21.md has no screenshot for step 21: no render target supplied

@@ -1,0 +1,172 @@
+{
+  "attempted": true,
+  "failed_steps": [
+    21
+  ],
+  "generated_steps": [
+    19
+  ],
+  "renderer": "scratch-desktop-cua",
+  "skipped_steps": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    20,
+    22
+  ],
+  "steps": {
+    "1": {
+      "output": "images/step_1_output.png",
+      "reason": "ProjectShaper has no Scratch checkpoint renderer; native checkpoint-loading attempts encountered noWindowsAvailable and elementHasNoFrame errors.",
+      "status": "skipped",
+      "target": "render_targets/step_1.json"
+    },
+    "10": {
+      "output": "images/step_10_output.png",
+      "reason": "ProjectShaper has no Scratch checkpoint renderer; native checkpoint-loading attempts encountered noWindowsAvailable and elementHasNoFrame errors.",
+      "status": "skipped",
+      "target": "render_targets/step_10.json"
+    },
+    "11": {
+      "output": "images/step_11_output.png",
+      "reason": "ProjectShaper has no Scratch checkpoint renderer; native checkpoint-loading attempts encountered noWindowsAvailable and elementHasNoFrame errors.",
+      "status": "skipped",
+      "target": "render_targets/step_11.json"
+    },
+    "12": {
+      "output": "images/step_12_output.png",
+      "reason": "ProjectShaper has no Scratch checkpoint renderer; native checkpoint-loading attempts encountered noWindowsAvailable and elementHasNoFrame errors.",
+      "status": "skipped",
+      "target": "render_targets/step_12.json"
+    },
+    "13": {
+      "output": "images/step_13_output.png",
+      "reason": "ProjectShaper has no Scratch checkpoint renderer; native checkpoint-loading attempts encountered noWindowsAvailable and elementHasNoFrame errors.",
+      "status": "skipped",
+      "target": "render_targets/step_13.json"
+    },
+    "14": {
+      "output": "images/step_14_output.png",
+      "reason": "ProjectShaper has no Scratch checkpoint renderer; native checkpoint-loading attempts encountered noWindowsAvailable and elementHasNoFrame errors.",
+      "status": "skipped",
+      "target": "render_targets/step_14.json"
+    },
+    "15": {
+      "output": "images/step_15_output.png",
+      "reason": "ProjectShaper has no Scratch checkpoint renderer; native checkpoint-loading attempts encountered noWindowsAvailable and elementHasNoFrame errors.",
+      "status": "skipped",
+      "target": "render_targets/step_15.json"
+    },
+    "16": {
+      "output": "images/step_16_output.png",
+      "reason": "ProjectShaper has no Scratch checkpoint renderer; native checkpoint-loading attempts encountered noWindowsAvailable and elementHasNoFrame errors.",
+      "status": "skipped",
+      "target": "render_targets/step_16.json"
+    },
+    "17": {
+      "output": "images/step_17_output.png",
+      "reason": "ProjectShaper has no Scratch checkpoint renderer; native checkpoint-loading attempts encountered noWindowsAvailable and elementHasNoFrame errors.",
+      "status": "skipped",
+      "target": "render_targets/step_17.json"
+    },
+    "18": {
+      "output": "images/step_18_output.png",
+      "reason": "ProjectShaper has no Scratch checkpoint renderer; native checkpoint-loading attempts encountered noWindowsAvailable and elementHasNoFrame errors.",
+      "status": "skipped",
+      "target": "render_targets/step_18.json"
+    },
+    "19": {
+      "output": "images/step_19_output.png",
+      "status": "generated",
+      "target": "en/code/lunar-horoscope-complete/lunar-horoscope-complete.sb3",
+      "input": "2024",
+      "evidence": "Observed and captured in Scratch 3.32.1; final lesson scripts match the supplied complete project exactly."
+    },
+    "2": {
+      "output": "images/step_2_output.png",
+      "reason": "ProjectShaper has no Scratch checkpoint renderer; native checkpoint-loading attempts encountered noWindowsAvailable and elementHasNoFrame errors.",
+      "status": "skipped",
+      "target": "render_targets/step_2.json"
+    },
+    "20": {
+      "output": "images/step_20_output.png",
+      "reason": "ProjectShaper has no Scratch checkpoint renderer; native checkpoint-loading attempts encountered noWindowsAvailable and elementHasNoFrame errors.",
+      "status": "skipped",
+      "target": "render_targets/step_20.json"
+    },
+    "21": {
+      "output": "images/step_21_output.png",
+      "reason": "Requested export-menu screenshots could not be captured: Scratch native interactions returned noWindowsAvailable, stale element IDs and cgWindowNotFound; Chrome file loading also ended in cgWindowNotFound. No context-menu screenshot or actual text export was produced.",
+      "status": "failed",
+      "target": "render_targets/step_21.json",
+      "requested_images": [
+        "images/step_21_output.png",
+        "images/traits-export-option.png"
+      ]
+    },
+    "3": {
+      "output": "images/step_3_output.png",
+      "reason": "ProjectShaper has no Scratch checkpoint renderer; native checkpoint-loading attempts encountered noWindowsAvailable and elementHasNoFrame errors.",
+      "status": "skipped",
+      "target": "render_targets/step_3.json"
+    },
+    "4": {
+      "output": "images/step_4_output.png",
+      "reason": "ProjectShaper has no Scratch checkpoint renderer; native checkpoint-loading attempts encountered noWindowsAvailable and elementHasNoFrame errors.",
+      "status": "skipped",
+      "target": "render_targets/step_4.json"
+    },
+    "5": {
+      "output": "images/step_5_output.png",
+      "reason": "ProjectShaper has no Scratch checkpoint renderer; native checkpoint-loading attempts encountered noWindowsAvailable and elementHasNoFrame errors.",
+      "status": "skipped",
+      "target": "render_targets/step_5.json"
+    },
+    "6": {
+      "output": "images/step_6_output.png",
+      "reason": "ProjectShaper has no Scratch checkpoint renderer; native checkpoint-loading attempts encountered noWindowsAvailable and elementHasNoFrame errors.",
+      "status": "skipped",
+      "target": "render_targets/step_6.json"
+    },
+    "7": {
+      "output": "images/step_7_output.png",
+      "reason": "ProjectShaper has no Scratch checkpoint renderer; native checkpoint-loading attempts encountered noWindowsAvailable and elementHasNoFrame errors.",
+      "status": "skipped",
+      "target": "render_targets/step_7.json"
+    },
+    "8": {
+      "output": "images/step_8_output.png",
+      "reason": "ProjectShaper has no Scratch checkpoint renderer; native checkpoint-loading attempts encountered noWindowsAvailable and elementHasNoFrame errors.",
+      "status": "skipped",
+      "target": "render_targets/step_8.json"
+    },
+    "9": {
+      "output": "images/step_9_output.png",
+      "reason": "ProjectShaper has no Scratch checkpoint renderer; native checkpoint-loading attempts encountered noWindowsAvailable and elementHasNoFrame errors.",
+      "status": "skipped",
+      "target": "render_targets/step_9.json"
+    },
+    "22": {
+      "output": "images/step_22_output.png",
+      "reason": "ProjectShaper has no Scratch checkpoint renderer; native checkpoint-loading attempts encountered noWindowsAvailable and elementHasNoFrame errors.",
+      "status": "skipped",
+      "target": "render_targets/step_22.json"
+    }
+  },
+  "toolchain_available": true
+}

@@ -1,0 +1,48 @@
+{
+  "workspace_root": "/Volumes/Extreme SSD/VSCode/lunar-horoscope",
+  "project_folder_name": "lunar-horoscope",
+  "project_slug": "lunar-horoscope",
+  "project_type": "scratch",
+  "project_title": "Lunar horoscope",
+  "audience": "11–14 years",
+  "learner_outcome": "Build a Scratch project that spins two wheels and reveals an animal, element, and traits for a year.",
+  "brief": "Scratch lessons using dino-jump as the authority for format, layout, and manageable coding tasks.",
+  "starter_inputs": [
+    "All source lists and artwork; no scripts and no variables."
+  ],
+  "complete_inputs": [
+    "en/code/lunar-horoscope-complete/lunar-horoscope-complete.sb3"
+  ],
+  "main_files": [
+    "lunar-horoscope-starter.sb3",
+    "lunar-horoscope-complete.sb3"
+  ],
+  "step_outline": [
+    "What you will make",
+    "Set up your project",
+    "Position the element wheel and pointers",
+    "Prepare a new turn",
+    "Ask for a year",
+    "Check the answer",
+    "Find a place in the cycle",
+    "Find the animal",
+    "Find the element",
+    "Choose the animal costume",
+    "Build the result text",
+    "Spin the animal wheel",
+    "Spin the element wheel",
+    "Vary the spins",
+    "Collect the animal traits",
+    "Add the element traits",
+    "Reveal the result",
+    "Fade the animal into view",
+    "Try another year",
+    "Test and save your project",
+    "Keep your traits",
+    "Challenge"
+  ],
+  "final_slug": "lunar-horoscope-complete",
+  "screenshot_or_render_notes": "See en/images/render_status.json; starter URL supplied, completed-project URL still pending.",
+  "starter_url": "https://scratch.mit.edu/projects/1379109668",
+  "complete_url": null
+}

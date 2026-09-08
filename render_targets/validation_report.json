@@ -1,0 +1,11 @@
+{
+  "checks": 56791,
+  "errors": [],
+  "warnings": [
+    "Completed Scratch URL is awaiting the user; the introduction uses the observed project screenshot as its preview.",
+    "No screenshot for steps: 1, 10, 11, 12, 13, 14, 15, 16, 17, 18, 2, 20, 21, 3, 4, 5, 6, 7, 8, 9, 22; see render_status.json."
+  ],
+  "calculation_years_checked": 9999,
+  "checkpoints_checked": 22,
+  "complete_sha256": "68fac17f7e74bcf72e315c4aff6a779ff3e8da341ae7461dd6c5327c7ae95fff"
+}
