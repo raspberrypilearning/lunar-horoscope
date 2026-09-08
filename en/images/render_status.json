@@ -1,10 +1,9 @@
 {
   "attempted": true,
-  "failed_steps": [
-    21
-  ],
+  "failed_steps": [],
   "generated_steps": [
-    19
+    19,
+    21
   ],
   "renderer": "scratch-desktop-cua",
   "skipped_steps": [
@@ -111,13 +110,13 @@
     },
     "21": {
       "output": "images/step_21_output.png",
-      "reason": "Requested export-menu screenshots could not be captured: Scratch native interactions returned noWindowsAvailable, stale element IDs and cgWindowNotFound; Chrome file loading also ended in cgWindowNotFound. No context-menu screenshot or actual text export was produced.",
-      "status": "failed",
-      "target": "render_targets/step_21.json",
-      "requested_images": [
-        "images/step_21_output.png",
-        "images/traits-export-option.png"
-      ]
+      "status": "generated",
+      "target": "en/code/lunar-horoscope-complete/lunar-horoscope-complete.sb3",
+      "source_capture": "render_targets/traits-context-menu-2024.png",
+      "input": "2024",
+      "evidence": "Actual Scratch 3.32.1 screenshot showing the populated seven-row Your Traits list with import/export/hide context menu open. Export opened a native save dialog named Your Traits.txt.",
+      "additional_capture_status": "pending",
+      "additional_capture_reason": "A highlighted export option or completed save screenshot could not be captured: subsequent controls returned stale element IDs and noWindowsAvailable. No actual exported TXT file was obtained."
     },
     "3": {
       "output": "images/step_3_output.png",

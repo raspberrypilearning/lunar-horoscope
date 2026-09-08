@@ -12,9 +12,11 @@ Export the **Your Traits** list as a text file you can keep and open outside Scr
 >
 > In the Scratch editor, right-click inside the **Your Traits** list on the Stage to open its context menu. On a Mac, you can hold **Control** and click.
 >
+> ![The Your Traits list on the Stage with its context menu open. Export is the middle option, between import and hide.](images/step_21_output.png)
+>
 > Choose **export** from the menu.
 
-<!-- Screenshot capture pending: Your Traits on the Stage with its context menu open, then the export option highlighted. -->
+<!-- Additional screenshot pending: the export option highlighted or the completed save operation. -->
 
 > [!TIP]
 >
