@@ -29,7 +29,7 @@ Lessons 2–4 build the scene-reset scripts. Lessons 5–11 build input, calcula
 
 `step_2.md` contains the starter-opening task, artwork/list orientation, and the first reset scripts. Its learner entry point is the [user-supplied Scratch starter](https://scratch.mit.edu/projects/1379109668), followed by See inside to open the editor. There is no SB3 download/load workflow in that step. The local SB3 remains the source artifact for the hosted starter.
 
-The completed-project URL has not yet been supplied. Step 1 currently uses the observed finished-project screenshot, with a hidden authoring comment marking the URL insertion point. Do not substitute the starter or an unrelated project ID. The starter URL is recorded from the user's message; the hosted project's contents have not been independently checked.
+The user supplied Scratch project `1379109668` for both the step 2 starter link and the step 1 embed. Step 1 uses Dino Jump's `scratch-preview` wrapper and 485 × 402 iframe, with autostart disabled; its print-only preview retains the observed finished-project screenshot. Both URLs are recorded as supplied. The hosted project's contents have not been independently checked.
 
 All coding lessons follow Dino Jump: a plain `##` title, short goal, quoted `> [!TASK]` callouts with `blocks3` diagrams and `+` additions, optional `TIP` callouts, and a final test task. There are no HTML task headings, numbered `### Step` subsections, or `c-project-code` wrappers. The challenge ends with a `SAVE` marker. Metadata begins with `What you will make`, with no separate landing-page flag or file.
 
@@ -58,6 +58,6 @@ Lesson 21 adds list export without changing any scripts or variables. Scratch’
 
 The first context-menu screenshot is now captured in `images/step_21_output.png`, with a source copy under `render_targets/`. Selecting export opened a native save dialog showing `Your Traits.txt`. An additional screenshot with export highlighted or the save operation completed remains outstanding: subsequent controls failed with stale element IDs and `noWindowsAvailable`, and no actual exported text file was obtained. A hidden note marks that remaining capture without a broken image link. A blank, unshared Scratch QA draft was automatically created in Chrome at `https://scratch.mit.edu/projects/1379068179/editor`; it is not a starter or completed-project publication URL.
 
-The completed-project URL and a project-specific hero image were not supplied. The supplied generic banner is retained. The lesson site has not been published, and the repository’s publication pipeline was not available for a rendered `blocks3` review. Literal square brackets in the year prompt are escaped for Scratchblocks.
+No project-specific hero image was supplied, so the supplied generic banner is retained. The lesson site has not been published, and the repository’s publication pipeline was not available for a rendered `blocks3` review. Literal square brackets in the year prompt are escaped for Scratchblocks.
 
 All scientific/personality claims are avoided: the text describes the supplied traditional associations as an exploration for fun. The code works from a supplied year, does not calculate Lunar New Year dates, and does not infer a sign from a full date of birth.

@@ -6,9 +6,9 @@ Different years give different results, and a **TRY ANOTHER YEAR** button lets y
 
 > [!NOPRINT]
 >
-> ![The finished Lunar horoscope project showing Wood Dragon and its traits.](images/step_19_output.png)
-
-<!-- Replace the non-print preview image with the completed project's Scratch embed when its URL is supplied. -->
+> <div class="scratch-preview">
+>  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/1379109668/?autostart=false" frameborder="0"></iframe>
+> </div>
 
 > [!PRINTONLY]
 >
