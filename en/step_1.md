@@ -12,4 +12,4 @@ Different years give different results, and a **TRY ANOTHER YEAR** button lets y
 
 > [!PRINTONLY]
 >
-> ![The finished Lunar horoscope project showing Wood Dragon and its traits.](images/step_19_output.png)
+> ![The finished Lunar horoscope project.](images/step_19_output.png)
