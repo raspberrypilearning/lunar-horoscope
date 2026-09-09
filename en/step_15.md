@@ -4,7 +4,7 @@ Build a result list containing the chosen animal’s heading and three lines of 
 
 > [!TASK]
 >
-> Select the **Stage**. Add these blocks below `wait 0.6 seconds` at the bottom of its `START` script.
+> Select the **Stage**. Add these blocks below `wait 0.6 seconds` at the bottom of its `START` script. (You can make one, then **duplicate** it to make the others.)
 >
 > All these lists already exist. Use **Variables** blocks to empty **Your Traits**, then add one item from each animal list. Each lookup uses the same `Animal Index + 1` item number.
 >
