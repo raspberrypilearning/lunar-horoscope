@@ -1,30 +1,23 @@
-## Ask for a year
+## Find a place in the cycle
 
-Ask the player for a year and store their answer in a variable.
-
-> [!TASK]
->
-> Select the **Stage** and choose **Variables → Make a Variable**. Name it `Birth Year`, including the space and capital letters. Creating it on the Stage makes it available to every sprite.
->
-> Leave its checkbox ticked so you can see its value on the Stage.
+Turn the year into a position in a repeating 60-year cycle.
 
 > [!TASK]
 >
-> Find the Stage’s existing `when I receive START` script. Add these two blocks at its bottom, after `delete all of Your Traits`.
+> On the **Stage**, create a variable called `Cycle`. Leave it ticked and untick `Birth Year` to make room on the Stage.
 >
-> Use **Sensing** for `ask and wait` and `answer`, **Variables** for `set`, and **Operators** for `round`. Drag the oval `answer` into `round`, then drag that into the `set` block.
+> The project uses `1984` as position `0`. After position `59`, the cycle returns to `0`.
+
+> [!TASK]
+>
+> Add a `set Cycle` block **below the whole repeat-until loop**, outside it. Build its calculation from the inside out: subtract `1984` from `Birth Year`, use `mod 60`, add `60`, then use `mod 60` again.
 >
 > ```blocks3
-> when I receive [START v]
-> switch backdrop to (Spinner v)
-> hide list [Your Traits v]
-> delete all of [Your Traits v]
-> +ask [Enter a whole birth year \[YYYY\]. Born before Lunar New Year? Enter the previous year.] and wait
-> +set [Birth Year v] to (round (answer))
+> +set [Cycle v] to (((((Birth Year) - (1984)) mod (60)) + (60)) mod (60))
 > ```
 >
-> `START` is a **broadcast**, a message that scripts can listen for. The green flag already sends this message. For now, use the example year `2024`; you do not need to enter your own birth year.
+> **Mod** gives the remainder after division: `61 mod 60` is `1`. The extra `+ 60` and `mod 60` keep the result in the range `0` to `59`, including for years before 1984, and match the completed project.
 
 > [!TASK]
 >
-> **Test your project.** Click the green flag, enter `2024`, and check that the **Birth Year** display changes to `2024`.
+> **Test your project.** Restart for each year and check that `1984` gives **Cycle** `0`, `2024` gives `40`, `2044` gives `0`, and `1983` gives `59`.

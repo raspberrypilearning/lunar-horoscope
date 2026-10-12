@@ -1,30 +1,39 @@
-## Find the element
+## Vary the spins
 
-Look up an element that changes every two years.
+Give each wheel a different number of turns while keeping the correct result.
 
 > [!TASK]
 >
-> On the **Stage**, create `Element Index` and `Element Name`. Leave them ticked and untick the two animal variables.
+> Select **Zodiac Wheel**. Replace the `60` in its repeat block with this calculation; keep the blocks inside and below the loop.
 >
-> Insert `set Element Index` **between** `set Animal Index` and `set Animal Name`. Use the **Operators** block with a dropdown, usually labelled `abs`, and choose `floor`. Build `Cycle mod 10`, divide it by `2`, then put that inside `floor`.
+> Build the left half, `pick random 2 to 6 × 60`, first. It chooses two to six full turns. Then add the right half, `((12 − Animal Index) mod 12) × 5`, which supplies the extra small turns needed to reach the chosen animal.
 >
 > ```blocks3
-> set [Animal Index v] to ((Cycle) mod (12))
-> +set [Element Index v] to ([floor v] of (((Cycle) mod (10)) / (2)))
-> set [Animal Name v] to (item ((Animal Index) + (1)) of [Animal Names v])
+> when I receive [SPIN v]
+> +repeat (((pick random (2) to (6)) * (60)) + ((((12) - (Animal Index)) mod (12)) * (5)))
+>   turn cw (6) degrees
+>   wait (0.01) seconds
+> end
+> point in direction ((90) - ((Animal Index) * (30)))
 > ```
 >
-> `floor` rounds down: `floor of 1.5` is `1`. This groups the cycle positions into pairs and gives an index from `0` to `4`.
+> Each animal slice takes five small turns because `30 ÷ 6 = 5`. The final direction block still sets the exact stopping position.
 
 > [!TASK]
 >
-> Add the element lookup below `set Animal Name`. The **Element Names** list is already in the order `Wood`, `Fire`, `Earth`, `Metal`, `Water`.
+> Select **Element Wheel** and replace its repeat count too. There are five element slices, and each takes `72 ÷ 6 = 12` small turns.
 >
 > ```blocks3
-> set [Animal Name v] to (item ((Animal Index) + (1)) of [Animal Names v])
-> +set [Element Name v] to (item ((Element Index) + (1)) of [Element Names v])
+> when I receive [SPIN v]
+> +repeat (((pick random (2) to (6)) * (60)) + ((((5) - (Element Index)) mod (5)) * (12)))
+>   turn cw (6) degrees
+>   wait (0.01) seconds
+> end
+> point in direction ((90) - ((Element Index) * (72)))
 > ```
 
 > [!TASK]
 >
-> **Test your project.** Restart for each year and check that `2024` and `2025` both give **Element Name** `Wood` with index `0`, while `2026` gives `Fire` with index `1`.
+> **Test your project.** Try `2026` several times and check that the wheels can finish at different times but always stop on **Horse** and **Fire**.
+>
+> Random choices can repeat, so two spins may sometimes look the same.

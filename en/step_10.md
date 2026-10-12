@@ -1,37 +1,47 @@
-## Choose the animal costume
+## Collect the traits
 
-Choose the costume that matches both the animal and the element.
+Build a result list containing the chosen animal’s heading and three lines of traits.
 
 > [!TASK]
 >
-> On the **Stage**, create `Costume Number`. Leave it ticked and untick the two element variables.
+> Select the **Stage**. Add these blocks below `wait 0.6 seconds` at the bottom of its `START` script. (You can make one, then **duplicate** it to make the others.)
 >
-> There are five costumes for each animal. Multiply `Animal Index` by `5` to skip earlier animals, add `Element Index` to choose its element, then add `1` because costume numbers start at `1`.
->
-> Attach this block below `set Element Name`.
+> All these lists already exist. Use **Variables** blocks to empty **Your Traits**, then add one item from each animal list. Each lookup uses the same `Animal Index + 1` item number.
 >
 > ```blocks3
-> set [Element Name v] to (item ((Element Index) + (1)) of [Element Names v])
-> +set [Costume Number v] to ((((Animal Index) * (5)) + (Element Index)) + (1))
+> wait (0.6) seconds
+> +delete all of [Your Traits v]
+> +add (item ((Animal Index) + (1)) of [Animal Headings v]) to [Your Traits v]
+> +add (item ((Animal Index) + (1)) of [Animal Trait Line 1 v]) to [Your Traits v]
+> +add (item ((Animal Index) + (1)) of [Animal Trait Line 2 v]) to [Your Traits v]
+> +add (item ((Animal Index) + (1)) of [Animal Trait Line 3 v]) to [Your Traits v]
 > ```
+>
+> You can duplicate the first `add` block, then change its source-list dropdown. Check that every destination dropdown still says **Your Traits**.
+>
+> The source lists line up: item `5` describes Dragon in every animal list. Emptying the result list prevents old traits from building up.
 
 > [!TASK]
 >
-> Select **Animal**, then **Code**. Add a new **Events** `when I receive` hat and choose **New message** to create `REVEAL`.
+> **Test your project.** Enter `2024`, wait for the wheels to stop, then tick **Your Traits** to check that it has exactly four rows starting with `DRAGON TRAITS`.
+
+Extend the result list with the chosen element’s heading and two lines of traits.
+
+> [!TASK]
 >
-> Add these blocks to choose the costume and place the animal on the Stage. Drag the orange oval `Costume Number` into the costume dropdown.
+> On the **Stage**, add these three blocks immediately below the animal-trait blocks. Do not add another `delete all` block: the animal rows need to stay.
+>
+> Use `Element Index + 1` for these lookups, and keep **Your Traits** as the destination list.
 >
 > ```blocks3
-> +when I receive [REVEAL v]
-> +switch costume to (Costume Number)
-> +go to x: (-118) y: (-42)
-> +set size to (68) %
-> +show
-> +go to [front v] layer
+> add (item ((Animal Index) + (1)) of [Animal Trait Line 3 v]) to [Your Traits v]
+> +add (item ((Element Index) + (1)) of [Element Headings v]) to [Your Traits v]
+> +add (item ((Element Index) + (1)) of [Element Trait Line 1 v]) to [Your Traits v]
+> +add (item ((Element Index) + (1)) of [Element Trait Line 2 v]) to [Your Traits v]
 > ```
+>
+> The traits are descriptions associated with the signs in this project. Your year does not decide your personality: choose which descriptions, if any, you relate to.
 
 > [!TASK]
 >
-> **Test your project.** Enter `2024` to check that **Costume Number** is `21`, then click the Animal sprite’s `when I receive REVEAL` hat to see its `dragon_wood` costume appear.
->
-> This click tests just the Animal script; later your Stage code will send `REVEAL` to every sprite, and the green flag will hide the animal again.
+> **Test your project.** Enter `2024`, wait for the spin to finish, then tick **Your Traits** to check for seven rows with `DRAGON TRAITS` first and `WOOD ELEMENT` fifth.

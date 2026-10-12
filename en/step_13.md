@@ -1,22 +1,34 @@
-## Spin the element wheel
+## Try another year
 
-Make the second wheel spin at the same time and stop on the chosen element.
+Let the player restart from the result screen without pressing the green flag.
 
 > [!TASK]
 >
-> Select **Element Wheel** and add this new script. Choose the existing `SPIN` message, and use `Element Index` in the direction calculation.
+> Select **Try Another Year**. Add this new `REVEAL` script to show the button when the result appears. Keep its `START` script, which hides it at the beginning of a turn.
 >
 > ```blocks3
-> +when I receive [SPIN v]
-> +repeat (60)
-> +  turn cw (6) degrees
-> +  wait (0.01) seconds
-> +end
-> +point in direction ((90) - ((Element Index) * (72)))
+> +when I receive [REVEAL v]
+> +wait (0.2) seconds
+> +show
+> +go to [front v] layer
 > ```
->
-> This wheel has five slices, so each is `360 ÷ 5 = 72` degrees. Both wheels receive the same message and run together; the Stage waits for both to finish.
 
 > [!TASK]
 >
-> **Test your project.** Enter `2026` and check that both wheels spin, then stop with **Horse** and **Fire** under their pointers.
+> Add another script that runs when the button sprite is clicked.
+>
+> ```blocks3
+> +when this sprite clicked
+> +hide
+> +broadcast [START v]
+> ```
+>
+> Hiding the button straight away prevents more clicks while the project resets. `START` returns the wheels to their starting positions, clears the previous result, and asks for another year.
+
+> [!TASK]
+>
+> **Test your project.** After revealing `2024`, click **TRY ANOTHER YEAR** and enter `2026` to check that the result becomes `2026 • Fire Horse` with seven fresh trait rows.
+>
+> Example result for `2024` in the completed Scratch project.
+>
+> ![Scratch showing 2024 Wood Dragon, seven trait rows, and the Try Another Year button.](images/step_19_output.png)

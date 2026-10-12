@@ -1,34 +1,56 @@
-## Build the result text
+## Reveal the result
 
-Join the year, element, and animal into one result.
+Arrange the result screen and show the sign, traits, and animal together.
 
 > [!TASK]
 >
-> Select the **Stage** and create `Your Sign`. Untick `Costume Number`.
->
-> Insert `hide variable Your Sign` after `switch backdrop to Spinner` at the **top** of the Stage’s `START` script. This clears the previous result from view when a new turn starts.
+> Select **Zodiac Wheel** and add this new script using the existing `REVEAL` message. It makes space for the animal by shrinking the wheel and moving it to the top.
 >
 > ```blocks3
-> when I receive [START v]
-> switch backdrop to (Spinner v)
-> +hide variable [Your Sign v]
-> hide list [Your Traits v]
-> delete all of [Your Traits v]
+> +when I receive [REVEAL v]
+> +go to x: (-180) y: (122)
+> +set size to (17) %
 > ```
 
 > [!TASK]
 >
-> At the **bottom** of the same script, after `set Costume Number`, add `set Your Sign` with four nested **Operators** `join` blocks.
->
-> Build from the inside out: join a single space to `Animal Name`, join `Element Name` to that, join ` • ` to that, then join `Birth Year` to the whole result. You can copy the bullet `•` from this sentence; put one space on each side of it.
+> Select **Element Wheel** and add its result position.
 >
 > ```blocks3
-> set [Costume Number v] to ((((Animal Index) * (5)) + (Element Index)) + (1))
-> +set [Your Sign v] to (join (Birth Year) (join [ • ] (join (Element Name) (join [ ] (Animal Name)))))
+> +when I receive [REVEAL v]
+> +go to x: (-60) y: (122)
+> +set size to (17) %
 > ```
 
 > [!TASK]
 >
-> **Test your project.** Enter `2024`, then tick **Your Sign** in Variables after answering to check that it reads `2024 • Wood Dragon`.
+> Select **Pointers** and hide the large arrows during the reveal.
 >
-> The green flag hides this display on each run, so tick it after answering whenever you want to inspect the text.
+> ```blocks3
+> +when I receive [REVEAL v]
+> +hide
+> ```
+
+> [!TASK]
+>
+> Select the **Stage**. Add these blocks at the very bottom of its `START` script, after the last element-trait block. They change the backdrop, show the text, and trigger the sprites’ `REVEAL` scripts, including the Animal script you made earlier.
+>
+> ```blocks3
+> add (item ((Element Index) + (1)) of [Element Trait Line 2 v]) to [Your Traits v]
+> +switch backdrop to (Result v)
+> +show variable [Your Sign v]
+> +show list [Your Traits v]
+> +broadcast [REVEAL v] and wait
+> ```
+
+> [!TASK]
+>
+> Untick any calculation variables that are still showing. Run the project and enter `2024`.
+>
+> After the reveal, drag the **Your Sign** display into the top of the panel on the right. Double-click it to show just its value in a large display. Position **Your Traits** below it and resize the list from its bottom-right corner so you can see all seven rows.
+>
+> You created **Your Sign** yourself, so its display needs positioning once; Scratch will remember its position when you save.
+
+> [!TASK]
+>
+> **Test your project.** Enter `2024` and check that the result screen shows `2024 • Wood Dragon`, the matching animal, two small wheels, and seven readable trait rows.

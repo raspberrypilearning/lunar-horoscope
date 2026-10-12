@@ -1,34 +1,40 @@
-## Position the element wheel and pointers
+## Prepare a new turn
 
-Reset the second wheel and keep the pointers above both wheels.
+Reset the backdrop and hide the parts that belong on the result screen.
 
 > [!TASK]
 >
-> Select **Element Wheel** and add this new script. Choose the existing `START` message from the hat’s dropdown.
+> Select the **Stage**. Add a second script beside the green flag script, using `when I receive START`. Choose the existing **Spinner** backdrop and **Your Traits** list from the dropdowns.
 >
 > ```blocks3
 > +when I receive [START v]
-> +set rotation style [all around v]
-> +go to x: (112) y: (75)
-> +set size to (25) %
-> +point in direction (90)
-> +show
+> +switch backdrop to (Spinner v)
+> +hide list [Your Traits v]
+> +delete all of [Your Traits v]
+> ```
+>
+> **Your Traits** is the empty list where you will collect the result. The other lists hold the data to look up; leave their contents unchanged.
+
+> [!TASK]
+>
+> Select **Animal** and add these blocks. Its picture should only appear when there is a result to show.
+>
+> ```blocks3
+> +when I receive [START v]
+> +hide
+> +clear graphic effects
+> +set rotation style [don't rotate v]
 > ```
 
 > [!TASK]
 >
-> Select **Pointers** and add this script. Its costume contains both arrows, so you only need one sprite.
+> Select **Try Another Year** and add this script to hide the button at the beginning of a turn.
 >
 > ```blocks3
 > +when I receive [START v]
-> +go to x: (0) y: (0)
-> +set size to (100) %
-> +show
-> +go to [front v] layer
+> +hide
 > ```
->
-> `go to front layer` keeps the arrows visible above the wheels.
 
 > [!TASK]
 >
-> **Test your project.** Move the element wheel and pointers, then click the green flag to check that the wheel returns to the right and the two arrows return above the wheels.
+> **Test your project.** Use each sprite’s **Show** control to reveal **Animal** and **Try Another Year**, then click the green flag to check that both hide while the wheels and pointers stay visible.
