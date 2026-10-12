@@ -1,26 +1,37 @@
-## Collect the animal traits
+## Keep your traits
 
-Build a result list containing the chosen animal’s heading and three lines of traits.
-
-> [!TASK]
->
-> Select the **Stage**. Add these blocks below `wait 0.6 seconds` at the bottom of its `START` script. (You can make one, then **duplicate** it to make the others.)
->
-> All these lists already exist. Use **Variables** blocks to empty **Your Traits**, then add one item from each animal list. Each lookup uses the same `Animal Index + 1` item number.
->
-> ```blocks3
-> wait (0.6) seconds
-> +delete all of [Your Traits v]
-> +add (item ((Animal Index) + (1)) of [Animal Headings v]) to [Your Traits v]
-> +add (item ((Animal Index) + (1)) of [Animal Trait Line 1 v]) to [Your Traits v]
-> +add (item ((Animal Index) + (1)) of [Animal Trait Line 2 v]) to [Your Traits v]
-> +add (item ((Animal Index) + (1)) of [Animal Trait Line 3 v]) to [Your Traits v]
-> ```
->
-> You can duplicate the first `add` block, then change its source-list dropdown. Check that every destination dropdown still says **Your Traits**.
->
-> The source lists line up: item `5` describes Dragon in every animal list. Emptying the result list prevents old traits from building up.
+Export the **Your Traits** list as a text file you can keep and open outside Scratch.
 
 > [!TASK]
 >
-> **Test your project.** Enter `2024`, wait for the wheels to stop, then tick **Your Traits** to check that it has exactly four rows starting with `DRAGON TRAITS`.
+> Run your project and enter a year. Wait for the animal and the seven rows in **Your Traits** to appear.
+>
+> Keep this result on the Stage while you export it. **TRY ANOTHER YEAR** clears the list ready for a new result.
+
+> [!TASK]
+>
+> In the Scratch editor, right-click inside the **Your Traits** list on the Stage to open its context menu. On a Mac, you can hold **Control** and click.
+>
+> ![The Your Traits list on the Stage with its context menu open. Export is the middle option, between import and hide.](images/step_21_output.png)
+>
+> Choose **export** from the menu.
+
+<!-- Additional screenshot pending: the export option highlighted or the completed save operation. -->
+
+> [!TIP]
+>
+> If you cannot see the coding area, leave full-screen mode or choose **See inside** first. Right-click the list displayed on the Stage, rather than a block in the Variables category.
+
+> [!TASK]
+>
+> Scratch downloads a file called `Your Traits.txt`. If a save window appears, choose a folder and save the file; otherwise, look in your **Downloads** folder.
+>
+> Give the file a name that includes your chosen year, such as `lunar-traits-2024.txt`. Keep `.txt` at the end. The year is shown in **Your Sign**, but is not included in the exported list.
+
+> [!TASK]
+>
+> **Test your project.** Open your saved `.txt` file in a text editor, such as Notepad or TextEdit. Check that it contains the same seven rows as **Your Traits**, with each list item on its own line.
+>
+> For `2024`, the two headings should be `DRAGON TRAITS` and `WOOD ELEMENT`. Long rows may wrap on screen, but they still belong to one list item.
+>
+> You now have a copy of these traits to keep, even after you try another year in Scratch.

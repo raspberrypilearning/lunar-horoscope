@@ -1,22 +1,19 @@
-## Add the element traits
+## Challenge
 
-Extend the result list with the chosen element’s heading and two lines of traits.
-
-> [!TASK]
->
-> On the **Stage**, add these three blocks immediately below the animal-trait blocks. Do not add another `delete all` block: the animal rows need to stay.
->
-> Use `Element Index + 1` for these lookups, and keep **Your Traits** as the destination list.
->
-> ```blocks3
-> add (item ((Animal Index) + (1)) of [Animal Trait Line 3 v]) to [Your Traits v]
-> +add (item ((Element Index) + (1)) of [Element Headings v]) to [Your Traits v]
-> +add (item ((Element Index) + (1)) of [Element Trait Line 1 v]) to [Your Traits v]
-> +add (item ((Element Index) + (1)) of [Element Trait Line 2 v]) to [Your Traits v]
-> ```
->
-> The traits are descriptions associated with the signs in this project. Your year does not decide your personality: choose which descriptions, if any, you relate to.
+Personalise one part of your project while keeping its results correct.
 
 > [!TASK]
 >
-> **Test your project.** Enter `2024`, wait for the spin to finish, then tick **Your Traits** to check for seven rows with `DRAGON TRAITS` first and `WOOD ELEMENT` fifth.
+> Choose one idea to try:
+>
+> - Change the wheel animation’s `wait 0.01 seconds` to `0.02` in both sprites and compare how the spins feel; keep the turn angles and direction calculations the same.
+> - Edit the colours or decoration of a backdrop, keeping space for the wheels and result displays.
+> - Add a sound to the Animal sprite’s `REVEAL` script, then check when it plays.
+>
+> Change one thing at a time and save another copy when you are happy with it. Show someone your project and explain how a year becomes two list positions.
+
+> [!TASK]
+>
+> **Test your project.** Try `2024` and `2026` again and check that your chosen change works while the results remain **Wood Dragon** and **Fire Horse**.
+
+> [!SAVE]

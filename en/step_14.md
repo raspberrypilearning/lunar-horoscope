@@ -1,39 +1,34 @@
-## Vary the spins
+## Test and save your project
 
-Give each wheel a different number of turns while keeping the correct result.
-
-> [!TASK]
->
-> Select **Zodiac Wheel**. Replace the `60` in its repeat block with this calculation; keep the blocks inside and below the loop.
->
-> Build the left half, `pick random 2 to 6 × 60`, first. It chooses two to six full turns. Then add the right half, `((12 − Animal Index) mod 12) × 5`, which supplies the extra small turns needed to reach the chosen animal.
->
-> ```blocks3
-> when I receive [SPIN v]
-> +repeat (((pick random (2) to (6)) * (60)) + ((((12) - (Animal Index)) mod (12)) * (5)))
->   turn cw (6) degrees
->   wait (0.01) seconds
-> end
-> point in direction ((90) - ((Animal Index) * (30)))
-> ```
->
-> Each animal slice takes five small turns because `30 ÷ 6 = 5`. The final direction block still sets the exact stopping position.
+Check the complete journey and save a working copy of your project.
 
 > [!TASK]
 >
-> Select **Element Wheel** and replace its repeat count too. There are five element slices, and each takes `72 ÷ 6 = 12` small turns.
+> Run these examples, using **TRY ANOTHER YEAR** between them. These are test years entered directly into the project, without a date adjustment.
 >
-> ```blocks3
-> when I receive [SPIN v]
-> +repeat (((pick random (2) to (6)) * (60)) + ((((5) - (Element Index)) mod (5)) * (12)))
->   turn cw (6) degrees
->   wait (0.01) seconds
-> end
-> point in direction ((90) - ((Element Index) * (72)))
-> ```
+> | Year | Animal | Element | Costume number |
+> | --- | --- | --- | --- |
+> | 1984 | Rat | Wood | 1 |
+> | 2024 | Dragon | Wood | 21 |
+> | 2025 | Snake | Wood | 26 |
+> | 2026 | Horse | Fire | 32 |
+> | 1983 | Pig | Water | 60 |
+> | 2044 | Rat | Wood | 1 |
+>
+> If a result differs, tick the relevant variables to trace it: `Birth Year` → `Cycle` → the two indexes → the two names → `Costume Number`. Remember that list lookups need `+ 1`.
 
 > [!TASK]
 >
-> **Test your project.** Try `2026` several times and check that the wheels can finish at different times but always stop on **Horse** and **Fire**.
+> Try `hello`, `0`, `10000`, and `2024.5` again. Each should ask for another answer. Finish with a valid year so the result appears.
 >
-> Random choices can repeat, so two spins may sometimes look the same.
+> Watch one complete run: both wheels must finish before the scene changes, and the result list must contain seven rows even after several retries. Untick the calculation variables afterwards.
+>
+> The project does not ask for a month or day. To explore a traditional birth-year sign, someone born before that year’s Lunar New Year would enter the previous year, as the prompt explains; the code does not make that adjustment for them.
+
+> [!TASK]
+>
+> Choose **File → Save to your computer** and give your file a name you will recognise, such as `my-lunar-horoscope.sb3`.
+
+> [!TASK]
+>
+> **Test your project.** Load your saved file into a fresh Scratch project and enter `2026` to check that both wheels spin and the saved project reveals `2026 • Fire Horse`.

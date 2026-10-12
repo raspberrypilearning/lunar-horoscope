@@ -1,4 +1,4 @@
-## Set up your project
+## Set up the spinner
 
 Open your starter project and make the green flag reset the animal wheel.
 
@@ -53,3 +53,36 @@ Open your starter project and make the green flag reset the animal wheel.
 > [!TASK]
 >
 > **Test your project.** Drag the animal wheel somewhere else on the Stage, click the green flag, and check that it returns to the left with its original size and direction.
+
+Now reset the second wheel and keep the pointers above both wheels.
+
+> [!TASK]
+>
+> Select **Element Wheel** and add this new script. Choose the existing `START` message from the hat’s dropdown.
+>
+> ```blocks3
+> +when I receive [START v]
+> +set rotation style [all around v]
+> +go to x: (112) y: (75)
+> +set size to (25) %
+> +point in direction (90)
+> +show
+> ```
+
+> [!TASK]
+>
+> Select **Pointers** and add this script. Its costume contains both arrows, so you only need one sprite.
+>
+> ```blocks3
+> +when I receive [START v]
+> +go to x: (0) y: (0)
+> +set size to (100) %
+> +show
+> +go to [front v] layer
+> ```
+>
+> `go to front layer` keeps the arrows visible above the wheels.
+
+> [!TASK]
+>
+> **Test your project.** Move both wheels and the pointers, then click the green flag. Check that the wheels return to opposite sides and the arrows appear above them.

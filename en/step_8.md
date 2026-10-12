@@ -1,29 +1,57 @@
-## Find the animal
+## Spin the wheels
 
-Use the cycle position to look up an animal in the supplied list.
+Make the animal wheel turn and stop on the chosen animal.
 
 > [!TASK]
 >
-> On the **Stage**, create `Animal Index` and `Animal Name`. Leave both ticked and untick `Cycle`.
+> Select **Zodiac Wheel**. Add this **new script**, leaving its `START` script in place. In the **Events** hat’s dropdown, choose **New message** and name it `SPIN`.
 >
-> An **index** is a position. This calculation gives positions `0` to `11`, one for each animal. Add the new block below `set Cycle`.
+> Use **Control** for the repeat and wait blocks, and **Motion** for turn and point in direction. The `turn right` block has a clockwise arrow.
 >
 > ```blocks3
-> set [Cycle v] to (((((Birth Year) - (1984)) mod (60)) + (60)) mod (60))
-> +set [Animal Index v] to ((Cycle) mod (12))
+> +when I receive [SPIN v]
+> +repeat (60)
+> +  turn cw (6) degrees
+> +  wait (0.01) seconds
+> +end
+> +point in direction ((90) - ((Animal Index) * (30)))
 > ```
+>
+> Sixty turns of 6 degrees make one full turn: `60 × 6 = 360`. The final block lines up the result under the pointer. There are 12 animals, so each slice is `360 ÷ 12 = 30` degrees.
 
 > [!TASK]
 >
-> Add a `set Animal Name` block below it. Find `item 1 of Animal Names` in **Variables**, then put `Animal Index + 1` in the item number.
+> Select the **Stage**. Attach these blocks at the bottom of its `START` script, immediately after `set Your Sign`.
 >
 > ```blocks3
-> set [Animal Index v] to ((Cycle) mod (12))
-> +set [Animal Name v] to (item ((Animal Index) + (1)) of [Animal Names v])
+> set [Your Sign v] to (join (Birth Year) (join [ • ] (join (Element Name) (join [ ] (Animal Name)))))
+> +broadcast [SPIN v] and wait
+> +wait (0.6) seconds
 > ```
 >
-> Scratch lists start at item `1`, so we add `1` to the index: index `0` looks up item `1`, which is `Rat`.
+> `broadcast and wait` lets the wheel finish before the Stage continues. The extra pause will let the player see where the wheels stop.
 
 > [!TASK]
 >
-> **Test your project.** Enter `2024` to check that **Animal Index** is `4` and **Animal Name** is `Dragon`, then restart with `2025` to check for index `5` and `Snake`.
+> **Test your project.** Enter `2024` and check that the animal wheel spins once, then lines up **Dragon** under its pointer while the element wheel stays still.
+
+Now make the element wheel spin at the same time and stop on the chosen element.
+
+> [!TASK]
+>
+> Select **Element Wheel** and add this new script. Choose the existing `SPIN` message, and use `Element Index` in the direction calculation.
+>
+> ```blocks3
+> +when I receive [SPIN v]
+> +repeat (60)
+> +  turn cw (6) degrees
+> +  wait (0.01) seconds
+> +end
+> +point in direction ((90) - ((Element Index) * (72)))
+> ```
+>
+> This wheel has five slices, so each is `360 ÷ 5 = 72` degrees. Both wheels receive the same message and run together; the Stage waits for both to finish.
+
+> [!TASK]
+>
+> **Test your project.** Enter `2026` and check that both wheels spin, then stop with **Horse** and **Fire** under their pointers.
